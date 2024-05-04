@@ -1,0 +1,96 @@
+:root {
+	--body-background: hsl(0, 0%, 8%);
+	--card-background: hsl(0, 0%, 12%);
+	--button-color: hsl(0, 0%, 20%);
+	--highlight-color: #bafb23;
+	--text-color: hsl(0, 0%, 100%);
+	--bio-color: hsl(0, 0%, 75%);
+
+	color-scheme: light dark;
+}
+
+body {
+	background-color: var(--body-background);
+	color: var(--text-color);
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "slnt" 0;
+	padding-top: 3em;
+	height: 100vh;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	border-radius: 50%;
+	width: 6em;
+}
+
+.card {
+	width: 375px;
+	background-color: var(--card-background);
+	margin: 0 auto;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	margin-bottom: 100px;
+}
+
+.name {
+	font-weight: 400;
+	margin-top: 1em;
+	font-size: 1.65em;
+}
+
+.location {
+	color: var(--highlight-color);
+	font-size: 0.96em;
+	margin-top: 0.4em;
+}
+
+.bio {
+	color: var(--bio-color);
+	font-size: 0.96em;
+	margin-top: 1.3em;
+	margin-bottom: 0.3em;
+}
+
+.social-links {
+	align-self: stretch;
+	font-size: 0.96em;
+	font-weight: 600;
+}
+
+.button {
+	padding: 0.8em 0;
+	background-color: var(--button-color);
+	text-align: center;
+	border-radius: 9px;
+	margin-top: 1.2em;
+	transition: background-color 0.1s ease;
+}
+
+.button:hover {
+	background-color: var(--highlight-color);
+	cursor: pointer;
+	cursor: black;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
