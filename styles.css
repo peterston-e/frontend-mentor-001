@@ -36,15 +36,18 @@ img {
 }
 
 .card {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
 	width: 375px;
 	background-color: var(--card-background);
-	margin: 0 auto;
+	margin: auto auto;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 2em;
-	margin-bottom: 100px;
 }
 
 .name {
@@ -84,13 +87,4 @@ img {
 .button:hover {
 	background-color: var(--highlight-color);
 	cursor: pointer;
-	cursor: black;
-}
-
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
 }
